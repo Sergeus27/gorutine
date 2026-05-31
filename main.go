@@ -26,6 +26,7 @@ func main() {
 	wg.Add(1)
 	go foo(wg)
 
-	wg.Wait() //ждет пока не отработают все Done
 	fmt.Println("hello from main")
+
+	wg.Wait() //ждет пока не отработают все Done
 }
